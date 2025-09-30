@@ -108,6 +108,11 @@ ol {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  padding-top: 5px;
+}
+
+.search-form__textfield:hover {
+  text-decoration: none;
 }
 
 .search-form__textfield:focus {
@@ -186,7 +191,7 @@ ol {
 .content {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   width: 1140px;
   gap: 30px;
 }
@@ -218,9 +223,13 @@ ol {
   outline: none;
 }
 
-.content__list-item:focus-visible {
-  outline: 1px solid #fff;
-  outline-offset: 2px;
+.content__list-item:has(:focus-visible) {
+  border: 3px solid #FFFFFF;
+  outline: none;
+}
+
+.content__card-link {
+  display: block;
 }
 
 .content__details {
@@ -251,9 +260,9 @@ ol {
 }
 
 .search-form__fieldset-title {
-  font-weight: 100;
-  font-size: 20px;
-  font-weight: 100;
+  font-family: Fira Sans Condensed;
+  font-size: 18px;
+  font-weight: 400; 
 }
 
 .content__video-card {
