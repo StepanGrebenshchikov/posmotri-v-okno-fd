@@ -89,7 +89,7 @@ ol {
   gap: 5px;
 }
 
-.search-form__label:hover {
+.search-form__label-text:hover {
   text-decoration: underline;
 }
 
@@ -174,15 +174,15 @@ ol {
   align-self: flex-end;
 }
 
-.search-form__submit-button:hover {
+.button:hover {
   text-decoration: underline;
 }
 
-.search-form__submit-button:active {
+.button:active {
   background-color: #545050;
 }
 
-.search-form__submit-button:focus-visible {
+.button:focus-visible {
   outline: 1px solid #fff;
   outline-offset: 2px;
 }
@@ -205,24 +205,25 @@ ol {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  padding-bottom: 30px;
 }
 
 .content__list-item {
 }
 
-.content__list-item:hover {
+.content__card-link:hover {
   text-decoration: underline;
 }
 
-.content__list-item:active {
+.content__card-link:active {
   background-color: #545050;
 }
 
-.content__list-item:focus {
+.content__card-link:focus {
   outline: none;
 }
 
-.content__list-item:has(:focus-visible) {
+.content__card-link:has(:focus-visible) {
   border: 3px solid #FFFFFF;
   outline: none;
 }
@@ -240,7 +241,7 @@ ol {
 
 .title {
   line-height: 94%;
-  font-family: Oswald;
+  font-family: Oswald sans-serif ;
   font-weight: 100;
   text-transform: uppercase;
   font-size: 75px;
@@ -248,10 +249,6 @@ ol {
 
 .content__accent {
   color: rgb(217 217 217 / 35%);
-  font-family: Oswald;
-  text-transform: uppercase;
-  font-weight: 100;
-  font-size: 75px;
 }
 
 .search-form__fieldset {
@@ -259,7 +256,7 @@ ol {
 }
 
 .search-form__fieldset-title {
-  font-family: Fira Sans Condensed;
+  font-family: Fira Sans Condensed sans-serif ;
   font-size: 18px;
   font-weight: 400; 
 }
@@ -270,11 +267,12 @@ ol {
 }
 
 .content__video-card-title {
-  font-family: Oswald;
+  font-family: Oswald sans-serif ;
   font-weight: bold;
   text-transform: uppercase;
   text-overflow: ellipsis;
   font-size: 30px;
+  line-height: 100%;
   word-wrap: normal;
   width: 196px;
   display: -webkit-box;
@@ -290,9 +288,11 @@ ol {
   overflow: hidden;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 4;
-  font-family: Fira Sans Condensed;
+  font-family: Fira Sans Condensed sans-serif ;
   font-weight: 400;
   font-size: 18px;
+  line-height: 16.2px;
+  padding-top: 6px;
 }
 
 .content__card-link {
@@ -311,6 +311,10 @@ ol {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+}
+
+.content__card-link_current {
+  background-color: #545050;
 }
 
 .more-button {
